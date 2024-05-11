@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/sol-nuvem.ico" type="image/x-icon" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./script.js" defer></script>
+
+    <title>Previsão de Tempo</title>
+  </head>
+
+  <body>
+    <container>
+      <header>
+        <div>
+          <i class="bx bxs-location-plus"></i>
+          <input
+            class="input-city"
+            type="text"
+            placeholder="Digite a Localização"
+          />
+        </div>
+        <a href="#" class="bx bx-search-alt-2"></a>
+      </header>
+      <section class="main">
+        <article>
+          <h3>Local:</h3>
+          <span>
+            <p class="country"></p>
+            <p class="city"></p>
+          </span>
+        </article>
+        <span>
+          <h3>Temperatura:</h3>
+          <p class="temp"></p>
+        </span>
+        <article class="box-list">
+          <div class="box-icon">
+            <img class="icon" src="" />
+            <p class="description"></p>
+          </div>
+          <div class="box-temp">
+            <span>
+              <i class="bx bx-trending-up"></i>
+              <p class="temp-max"></p>
+            </span>
+            <span>
+              <i class="bx bx-trending-down"></i>
+              <p class="temp-min"></p>
+            </span>
+          </div>
+        </article>
+        <article class="box-humidity">
+          <h3>Umidade:</h3>
+          <span>
+            <i class="bx bx-droplet"></i>
+            <p class="humidity"></p>
+          </span>
+        </article>
+        <article class="box-speed">
+          <h3>Velocidade do vento:</h3>
+          <span>
+            <i class="bx bx-wind"></i>
+            <p class="speed"></p>
+          </span>
+        </article>
+      </section>
+    </container>
+  </body>
+</html>
