@@ -1,5 +1,4 @@
 const searchBtn = document.querySelector(".bx-search-alt-2");
-const input = document.querySelector(".input-city");
 
 async function clickBtn() {
   const city = document.querySelector(".input-city").value;
@@ -8,7 +7,6 @@ async function clickBtn() {
 
   const resp = await fetch(apiUrl);
   const dados = await resp.json();
-  console.log(dados);
 
   document.querySelector(".country").innerHTML = dados.sys.country;
   document.querySelector(".city").innerHTML = dados.name;
@@ -30,7 +28,7 @@ async function clickBtn() {
   display();
 }
 
-input.addEventListener("keydown", clickBtn);
+searchBtn.addEventListener("keydown", clickBtn);
 searchBtn.addEventListener("click", clickBtn);
 
 function display() {
