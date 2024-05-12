@@ -2,9 +2,7 @@ const searchBtn = document.querySelector(".bx-search-alt-2");
 
 async function clickBtn() {
   const city = document.querySelector(".input-city").value;
-  // const apiKey = "cebcd482eda57fa9a6714c1c2ba91885";
-  const apiKey = "d14f9a6249f688da6c0be4d796ae815f";
-
+  const apiKey = "cebcd482eda57fa9a6714c1c2ba91885";
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=pt_br`;
 
   const resp = await fetch(apiUrl);
@@ -30,11 +28,10 @@ async function clickBtn() {
   display();
 }
 
-searchBtn.addEventListener("keydown", clickBtn);
-searchBtn.addEventListener("click", clickBtn);
-
 function display() {
   const section = document.querySelector(".main");
 
   section.style.display = "block";
 }
+
+searchBtn.addEventListener("click", clickBtn);
