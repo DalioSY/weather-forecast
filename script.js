@@ -30,7 +30,6 @@ async function clickBtn() {
 
 function display() {
   const section = document.querySelector(".main");
-
   section.style.display = "block";
 }
 
