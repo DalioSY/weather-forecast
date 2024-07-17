@@ -2,19 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   border: none;
   text-decoration: none;
   outline: none;
 }
 
 body {
-  min-width: 100vw;
+  background: url('./img/background.jpg');
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("https://source.unsplash.com/random/1600x900/?weather");
 }
 
 h2 {
