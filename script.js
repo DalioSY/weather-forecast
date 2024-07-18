@@ -23,7 +23,7 @@ async function clickBtn() {
     dados.weather[0].description;
   document.querySelector(
     '.icon'
-  ).src = `./img/${dados.weather[0].maintoLowerCase()}.png`;
+  ).src = `./img/${dados.weather[0].main.toLowerCase()}.png`;
   document.querySelector('.humidity').innerHTML = `${dados.main.humidity} %`;
   document.querySelector('.speed').innerHTML = `${dados.wind.speed} Km/h`;
 
