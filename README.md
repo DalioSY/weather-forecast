@@ -23,8 +23,6 @@ Para ver a previsão do tempo para hoje, acesse o link
 
 > Deploy: https://daliosy.github.io/weather-forecast
 
-> Portfólio: https://daliosy.github.io/my-PORTFOLIO
-
 > Linkedin: https://www.linkedin.com/in/dalio-s-yamada/
 
 <p>
